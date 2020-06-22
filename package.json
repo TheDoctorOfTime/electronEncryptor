@@ -1,0 +1,14 @@
+{
+  "name": "encryptor",
+  "version": "1.0.1",
+  "description": "encrypt messages cause the philippines is so fucked rn",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Rafael Ignacio",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.2"
+  }
+}

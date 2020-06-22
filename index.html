@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>Text Encryption/Decryption</title>
+</head>
+<body>
+
+    <div class="container" style="margin-top: 5em;">
+
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4" style="margin: 0.5em 1em 1em 1em;">Enter the message here</span>
+                <span class="card-title activator grey-text text-darken-4">
+                    <div class="row" style="margin: 0em 0.6em;">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <textarea id="myText" class="materialize-textarea"></textarea>
+                                    <label for="myText">Enter Message Body...</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </span>
+                <p style="text-align: right; margin: 2em 0.5em 1em 0.5em;">
+                                    
+                    <script src="./scripts/main.js"></script>    
+                    <a onclick="encrypt();" class="card-link">          Encrypt Text    </a>
+                    <a onclick="decrypt();" class="card-link activator">Decrypt Text    </a>
+                    <a onclick="cursify();" class="card-link ">         Curse Your Text </a>
+
+                </p>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Decrypted Message<i class="material-icons right" style="font-style: normal; font-size: 0.7em;">X</i></span>
+                <p id="decryption-output"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
